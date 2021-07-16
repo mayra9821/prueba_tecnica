@@ -12,8 +12,9 @@ class Ecorregion(models.Model):
     nombre = models.CharField(max_length=45, blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'ecorregion'
+        verbose_name="Ecorregion"
+        verbose_name_plural="Ecorregiones"
+        db_table = 'Ecorregiones'
 
 
 class Proyectos(models.Model):
@@ -21,8 +22,9 @@ class Proyectos(models.Model):
     nombre = models.CharField(max_length=45, blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'proyectos'
+        verbose_name="Proyecto"
+        verbose_name_plural="Proyectos"
+        db_table = 'Proyectos'
 
 
 class RegistroBioEspecies(models.Model):
@@ -49,5 +51,6 @@ class RegistroBioEspecies(models.Model):
     ecorregion = models.ForeignKey(Ecorregion, models.DO_NOTHING, db_column='ecorregion', blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'registro_bio_especies'
+        verbose_name="Registro biologico especies"
+        verbose_name_plural="Registro biologico especies"
+        db_table = 'Registro biologico especies'
