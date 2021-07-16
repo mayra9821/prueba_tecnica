@@ -1,5 +1,9 @@
 # Registros Biologicos
 
+El sistema esta basado en el administrador de django. 
+En la ruta /descarga_registros se puede encontrar los registros biologicos para su descarga 
+
+
 ### Prerequisites
 
 Se necesita tener instalado:

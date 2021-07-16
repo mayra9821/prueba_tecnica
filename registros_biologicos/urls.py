@@ -19,6 +19,9 @@ from registro.views import *
 
 urlpatterns = [
     path("List_proyectos",ProyectoListView.as_view(), name="Lista de proyectos"),
+    path("List_ecorregiones",EcorregionListView.as_view(), name="Lista de Ecorregiones"),
+    path("List_registros",RegistrosListView.as_view(), name="Lista de Registros"),
+    path("descarga_registros",RegistrosListView.as_view()),
    
     path('admin/', admin.site.urls),
 ]
