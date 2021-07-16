@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'registros_biologicos.wsgi.application'
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'registros_especies',
+            'NAME': 'registros',
             'USER': 'root',
             'PASSWORD': '',
             'HOST': 'localhost',

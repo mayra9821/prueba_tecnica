@@ -1,0 +1,28 @@
+<h1>Proyectos</h1>
+{% comment %} 
+<table>
+<thead>
+    {% for field in fields %}
+    <th>{{ field }}</th>
+    {% endfor %}
+</thead>
+<tbody>
+{% for proyecto in object_list %}
+    <tr>
+        {%for field in fields%}
+            <td>{{proyecto.field}}</td>
+        {%endfor%}
+    </tr>
+{% endfor %}
+</tbody>
+</table> {% endcomment %}
+
+
+<ul>
+
+{% for proyecto in object_list %}
+    <li>{{ proyecto.idproyecto }} - {{ proyecto.nombre }}</li>
+{% empty %}
+    <li>No se han registrado proyectos.</li>
+{% endfor %}
+</ul>

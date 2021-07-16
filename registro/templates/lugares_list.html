@@ -1,0 +1,8 @@
+<h1>Lugares</h1>
+<ul>
+{% for lugares in object_list %}
+    <li>{{ lugares.idLugares }} - {{ lugares.nombre }}</li>
+{% empty %}
+    <li>No se han registrado lugares.</li>
+{% endfor %}
+</ul>

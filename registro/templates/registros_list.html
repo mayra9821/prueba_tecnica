@@ -1,0 +1,25 @@
+<h1>Registros</h1>
+
+<ul>
+
+{% for registros in object_list %}
+    <li>Identificador: {{ registros.identificador }}
+        Especie: {{ registros.especie }}
+        familia: {{ registros.familia }}
+        nombre_comun: {{ registros.nombre_comun }}
+        proyecto: {{ registros.proyecto }}
+        base_registro: {{ registros.base_registro }}
+        anio_identificacion: {{ registros.anio_identificacion }}
+        departamento: {{ registros.departamento }}
+        municipio: {{ registros.municipio }}
+        localidad: {{ registros.localidad }}
+        latitud: {{ registros.latitud }}
+        longitud: {{ registros.longitud }}
+        autor: {{ registros.autor }}
+        fecha_captura: {{ registros.fecha_captura }}
+        ecorregion:{{registros.ecorregion}}
+    </li>
+{% empty %}
+    <li>No se han registrado registros biologicos.</li>
+{% endfor %}
+</ul>
